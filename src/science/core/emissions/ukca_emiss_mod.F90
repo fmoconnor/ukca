@@ -558,6 +558,10 @@ IF (PrintStatus >= PrStatus_Normal) THEN
   WRITE (umMessage,'(A,1X,I3)') 'Number of online emission fields:',           &
                                  num_onln_em_flds
   CALL umPrint(umMessage,src=RoutineName)
+  WRITE (umMessage,'(A,1X,I3)') 'FOC:Total number of emission fields:',            &
+                                 num_em_flds
+  CALL umPrint(umMessage,src=RoutineName)
+
   WRITE (umMessage,'(A,1X,I3)') 'Total number of emission fields:',            &
                                  num_em_flds
   CALL umPrint(umMessage,src=RoutineName)
